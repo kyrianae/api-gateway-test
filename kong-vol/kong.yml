@@ -1,0 +1,29 @@
+_format_version: "1.1"
+
+services:
+- name: hello1
+  url: http://hello1
+  # plugins:
+  # - name: basic-auth
+  routes:
+  - name: my-route1
+    paths:
+    - /
+- name: hello2
+  url: http://hello2/a
+  plugins:
+  - name: basic-auth
+  routes:
+  - name: my-route2
+    paths:
+    - /a
+
+consumers:
+- username: admin
+- custom_id: firstone
+   
+
+basicauth_credentials:
+- consumer: admin
+  username: user
+  password: pwd
