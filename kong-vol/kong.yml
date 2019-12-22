@@ -1,6 +1,14 @@
 _format_version: "1.1"
 
 services:
+- name: config
+  url: http://kong-gui:8080
+  plugins:
+  - name: basic-auth
+  routes:
+  - name: dash
+    paths:
+    - /configuration
 - name: hello1
   url: http://hello1
   # plugins:

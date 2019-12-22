@@ -8,3 +8,8 @@ docker-compose up
 modify file kong.yml according to what you want to do
 https://docs.konghq.com/1.1.x/db-less-and-declarative-config/
 https://konghq.com/blog/kong-1-1-released/
+https://electronjs.org/apps/kongdash
+https://www.bbva.com/en/api-gateways-kong-vs-tyk/
+https://hub.docker.com/r/upmcenterprises/kong-dashboard
+https://docs.konghq.com/install/docker/
+
